@@ -5,9 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ben McMullen's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=K2D:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
 </head>
 <body>
-    
+    <!--Below is the navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navStyle">
+            <a class="navbar-brand" href="#">Content Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" id="listStyle">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutMe">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resume</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Links</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactMe">Contact</a>   
+                </li>
+              </ul>
+            </div>
+          </nav>
+    <!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid" id="jumboStyle">
+        <div class="container">
+              <h1 class="display-4">Benjamin McMullen</h1>
+              <p class="lead">It is by will alone I set my mind in motion.</p>
+        </div>
+    </div>
+    <!--Projects-->
+<div class="container" id="projects">
+    <div class="row">
+        <div class="col-4"><a href="https://codepen.io/sageforfail/pen/xavbEv"><img src="assets/bongosample.png" alt="" class="picturez">
+            <br><p class="projectText">Creature</p></a></div>
+        <div class="col-4"><a href="https://bbensonmcmullen.github.io/tutorialPage/"><img src="assets/tutsample.png" alt="" class="picturez">
+            <br><p class="projectText">JS Tutorial Page</p></a></div>
+        <div class="col-4"><a href="https://www.patreon.com/babmgames"><img src="assets/placeholdsample.png" alt="" class="picturez">
+            <br><p class="projectText">Placeholder</p></a></div>
+    </div>
+</div>
+<!--About Me-->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p id="aboutMe">My name is Benjamin McMullen. I have been a writer, artist, blogger, and game designer for years and have recently begun to learn JavaScript, HTML, and CSS as part of a bootcamp cohort with Eleven-Fifty Academy in Fishers, Indiana.
+            As a part of the program, I'm gaining familiarity with many aspects of full-stack development. My personal foci are in the areas of creativity, content, design, and development. I'm a world-builder, a rule-maker, and a die-roller.</p>
+        </div>
+    </div>
+</div>
+<!--Contact Section-->
+<br>
+<br>
+<section id="about"></section>
+  <section id="portfolio"></section>
+  <section id="contact">
+   <div class="container" class="col-12">
+     <h2 class="text-uppercase" id="contactMe">Let's talk, eh?</h2>
+     <div class="row">
+       <form action="https://formspree.io/bbensonmcmullen@gmail.com" method="POST" id="formStyle">
+         <div class="control-group">
+           <div class="form-group">
+             <label>Leave a name here:</label>
+             <input
+               type="text"
+               class="form-control"
+               placeholder="Your Name"
+               id="name"
+               required
+               data-validation-required-message="Please enter your name"
+               name="name"
+               >
+             <p class="help-block text-danger"></p>
+           </div>
+         </div>
+         <div class="control-group">
+           <div class="form-group">
+             <label>And your email address, if you would:</label>
+             <input
+               type="email"
+               class="form-control"
+               placeholder="Your Email"
+               id="email"
+               required
+               data-validation-required-message="Please enter your email"
+               name="_replyto"
+             >
+             <p class="help-block text-danger"></p>
+           </div>
+         </div>
+         <div class="control-group">
+           <div class="form-group">
+            <label>And at long last, your message:</label>
+             <textarea
+               class="form-control"
+               rows="7"
+               placeholder="Would you kindly..."
+               id="message"
+               required
+               data-validation-required-message="Please leave a message"
+               name="message"
+             ></textarea>
+             <p class="help-block text-danger"></p>
+           </div>
+         </div>
+         <div class="text-center">
+           <div id="success"></div>
+           <button type="submit" class="btn btn-lg btn-black">
+             <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+             Send Message
+           </button>
+           <br>
+           <br>
+           <div>
+                <p id="yetMoreInfo" style="text-align:center">If you have any enquiries, proposals, or requests, feel free to fill the above form. I've got a handful of finished products and samples of my writing and code, in case you were curious or have a project with particular needs. You must not fear. Fear is the mind-killer. </p>
+            </div>
+         </div>
+       </form>
+     </div>
+   </div>
+   <br>
+ </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

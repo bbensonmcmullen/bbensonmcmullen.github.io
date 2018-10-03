@@ -1,0 +1,14 @@
+#contactMe{
+    text-align: center;
+    font-family: var(--font-one) !important;
+    font-weight: lighter;
+    color: #fff;
+}
+
+#formStyle{
+    margin-left: 5%;
+}
+
+#yetMoreInfo{
+    text-align: center;
+}

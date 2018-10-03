@@ -1,0 +1,12 @@
+.picturez{
+    border-radius: 50%;
+    border: 5px double black;
+    overflow: hidden;
+}
+
+.projectText{
+    text-align: center;
+    font-family: var(--font-one) !important;
+    font-weight: lighter;
+    color: #fff;
+}

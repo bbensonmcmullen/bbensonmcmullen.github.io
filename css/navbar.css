@@ -1,0 +1,10 @@
+#navStyle{
+    background: rgb(34, 34, 34) !important;
+    font-family: var(--font-one) !important;
+    border: 10px double #060606;
+    font-weight: lighter;
+}
+
+#listStyle{
+    margin-left: 71%;
+}

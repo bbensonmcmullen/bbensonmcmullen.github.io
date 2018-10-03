@@ -1,0 +1,8 @@
+#aboutMe{
+    font-size: 38px;
+    text-align: center;
+    font-family: var(--font-one) !important;
+    font-weight: lighter;
+    color: #fff;
+    margin-top: 5%;
+}

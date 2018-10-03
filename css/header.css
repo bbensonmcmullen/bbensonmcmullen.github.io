@@ -1,0 +1,10 @@
+#jumboStyle{
+ background: url('https://images.unsplash.com/photo-1507348762124-e7e0afcc0943?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20ba6cf0ac0967ebbba0728f8d97816f&auto=format&fit=crop&w=1567&q=80') no-repeat center;
+ /* ('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2ff04234a24074361ba13433670658f&auto=format&fit=crop&w=1534&q=80') no-repeat center; */
+ background-size: cover;
+ text-align: center;
+ font-family: var(--font-one) !important;
+ border: 10px double #060606;
+ font-weight: lighter;
+ color: #fff;
+}
